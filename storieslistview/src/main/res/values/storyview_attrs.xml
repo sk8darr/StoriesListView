@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StoryListView">
+        <attr name="StoryListViewStyle" format="reference"/>
+        <attr name="backgroundStoriesColor" format="color"/>
+        <attr name="storyElevation" format="dimension"/>
+        <attr name="storyCornerRadius"  format="dimension"/>
+        <attr name="maxItemCount" format="integer"/>
+        <attr name="addPhotoIconAsset" format="reference"/>
+        <attr name="addImageIconAsset" format="reference"/>
+        <attr name="removeIconAsset" format="reference"/>
+        <attr name="showButton1" format="boolean"/>
+        <attr name="showButton2" format="boolean"/>
+        <attr name="showRemoveButton" format="boolean"/>
+        <attr name="autoMoveToLastImage" format="boolean"/>
+    </declare-styleable>
+    
+</resources>
