@@ -14,7 +14,7 @@ ext {
     //ARTIFACT
     publishedGroupId = 'com.unixsoft.libs'
     artifact = "StoriesListView"
-    libraryVersion = '0.0.1-r1'
+    libraryVersion = '0.0.1-dev2'
 
     libraryDescription = 'Library for develop Stories lists'
     siteUrl = 'https://github.com/sk8darr/StoriesListView'
