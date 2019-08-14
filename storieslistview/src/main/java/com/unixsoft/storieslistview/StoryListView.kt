@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.unixsoft.storieslistview.utils.ItemOffsetDecoration
 
 /**
@@ -85,6 +86,7 @@ class StoryListView : LinearLayout{
             rv?.apply{
                 mAdapter = StoryAdapter(context, items, setPreferencesToItem())
                 adapter = mAdapter
+                layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 setHasFixedSize(true)
                 addItemDecoration(
                     ItemOffsetDecoration(
