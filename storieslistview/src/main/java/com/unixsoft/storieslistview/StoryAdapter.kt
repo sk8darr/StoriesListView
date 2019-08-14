@@ -2,14 +2,13 @@ package com.unixsoft.storieslistview
 
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.AppCompatImageButton
-import android.support.v7.widget.AppCompatImageView
-import android.support.v7.widget.CardView
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatImageButton
+import androidx.appcompat.widget.AppCompatImageView
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_add.view.*
 import kotlinx.android.synthetic.main.item_story_card.view.*
 
@@ -17,8 +16,7 @@ import kotlinx.android.synthetic.main.item_story_card.view.*
  * @author sk8 on 13/02/19.
  */
 
-class StoryAdapter (private val context: Context, private val items: List<String>, prefs: Bundle):
-    RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class StoryAdapter (private val context: Context, private val items: List<String>, prefs: Bundle): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     private val VIEW_TYPE_ADD = 0
     private val VIEW_TYPE_IMAGE = 1
@@ -124,7 +122,7 @@ class StoryAdapter (private val context: Context, private val items: List<String
     class StoryViewHolder(view: View): RecyclerView.ViewHolder(view){
         val imageV: AppCompatImageView = view.findViewById(R.id.iv_bg)
         val btnDelete: AppCompatImageButton? = view.ib_delete
-        val cardView: CardView = view.card_view
+        val cardView: androidx.cardview.widget.CardView = view.card_view
     }
 
     class AddViewHolder(view:View): RecyclerView.ViewHolder(view)
