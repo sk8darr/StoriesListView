@@ -42,7 +42,7 @@ subprojects {
 }
 
 bintray {
-    version = "0.0.2"
+    version = "0.0.1-r1"
     group = "com.unixsoft.libs"
     user = bintrayUser
     key = bintrayKey
